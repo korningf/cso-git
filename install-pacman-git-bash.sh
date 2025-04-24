@@ -6,7 +6,7 @@
 GITURL="https://github.com/git-for-windows/git-sdk-64.git"
 RAWURL="https://github.com/git-for-windows/git-sdk-64/raw"
 
-rm -rf   /c/Users/david/bag/gitportable-pacman/git-sdk-64
+#rm -rf   ${USERPROFILE}/bag/gitportable-pacman/git-sdk-64
 s=99 ; read  -rsp $"Wait $s seconds or press Escape-key or Arrow key to continue..." -t $s -d $'\e'; echo;echo;
 
 # Clone tiny blobless shallow repo ( 2021-08-22 - was depth 20)
