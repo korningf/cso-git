@@ -23,10 +23,11 @@ It turns out this is the same key as the git-for-windows distro.
 Add the git-for-windows key the keyring.
 
 ```bash
-curl -L https://raw.githubusercontent.com/git-for-windows/build-extra/HEAD/git-for-windows-keyring/git-for-windows.gpg |
-pacman-key --add - &&
-pacman-key --lsign-key E8325679DFFF09668AD8D7B67115A57376871B1C &&
-pacman-key --lsign-key 3B6D86A1BA7701CD0F23AED888138B9E1A9F3986
+curl -L \
+  https://raw.githubusercontent.com/git-for-windows/build-extra/HEAD/git-for-windows-keyring/git-for-windows.gpg | \
+  pacman-key --add - && \
+  pacman-key --lsign-key E8325679DFFF09668AD8D7B67115A57376871B1C && \
+  pacman-key --lsign-key 3B6D86A1BA7701CD0F23AED888138B9E1A9F3986
 ```
 
 # Operation
