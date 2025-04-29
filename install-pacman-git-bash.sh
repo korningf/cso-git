@@ -1,7 +1,9 @@
+#!/bin/sh
 
 # Script to install pacman package management
 # in Git for Windows Portable
 # To be run from a git-bash session.
+
 
 GITURL="https://github.com/git-for-windows/git-sdk-64.git"
 RAWURL="https://github.com/git-for-windows/git-sdk-64/raw"
@@ -50,9 +52,11 @@ wait
 mkdir -p /var/lib/pacman
 pacman-key --init
 pacman-key --populate msys2
-curl -L https://raw.githubusercontent.com/git-for-windows/build-extra/HEAD/git-for-windows-keyring/git-for-windows.gpg |\
-pacman-key --add - &&
-pacman-key --lsign-key 3B6D86A1BA7701CD0F23AED888138B9E1A9F3986
+curl \
+  -L https://raw.githubusercontent.com/git-for-windows/build-extra/HEAD/git-for-windows-keyring/git-for-windows.gpg | \
+  pacman-key --add - && \
+  pacman-key --lsign-key E8325679DFFF09668AD8D7B67115A57376871B1C && \
+  pacman-key --lsign-key 3B6D86A1BA7701CD0F23AED888138B9E1A9F3986
 echo ~~~doing... 1  pacman -Sy
 pacman -Sy
 
