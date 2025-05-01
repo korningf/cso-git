@@ -5,6 +5,7 @@
 Aegis-Git is a gitbash POSIX augmented with the MSYS2 pacman package manager.
 
 
+
 # Preparation
 
 To get pacman working we to add the gpg key for the git-sdk-64 distribution in the keyring.
@@ -69,16 +70,18 @@ Add MSYS2 MinGW64 standard development toolchain (GNU autotool, glibc, gcc, etc)
 
 
 
-
 # Attribution
 
 
-Johannes Schindelin for Git-For-Windows and the git-sdk-64 (Herculean work!).
+*Stephane Korning* (stefuss@yahoo.com) for the original idea and impetus. 
+
+
+*Johannes Schindelin* for Git-For-Windows and the git-sdk-64 (Herculean work!).
 
 [git for windows](https://gitforwindows.org/install-inside-msys2-proper.html)
 
 
-Alex Sarmiento for GitPortable-Pacman and David Gleba for a later port of it.
+*Alex Sarmiento* for GitPortable-Pacman and *David Gleba* for a latert port.
 
 [gitportable-pacman](https://github.com/dgleba/gitportable-pacman)
 
@@ -86,6 +89,5 @@ Alex Sarmiento for GitPortable-Pacman and David Gleba for a later port of it.
 # License
 
 Creative-Commons,  Attribution, NonCommercial, ShareAlike 4.0
-
 
 
