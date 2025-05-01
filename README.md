@@ -44,8 +44,8 @@ Update the pacman distro
 
 
 ```bash
-pacman -Syy
-pacman -Syu --overwrite ‘*’
+pacman -Syy --overwrite \*
+pacman -Syu --overwrite \*
 ```
 
 
