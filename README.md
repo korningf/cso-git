@@ -1,10 +1,8 @@
 # Aegis-git
 
-Extended gitbash (Git for windows) to include MSYS2 pacman package manager.
+![gitbash-pacman](gitbash-pacman.png)
 
-Add unix password-store (pass command); configure with ssh, ssl, gpg, tree.
-
-Add MSYS2 MinGW64 standard development tools (GNU autotool, glibc, gcc, etc).
+Aegis-Git is a gitbash POSIX augmented with the MSYS2 pacman package manager.
 
 
 # Preparation
@@ -63,19 +61,31 @@ We can now run pacman normally.
 
 
 
-# Troubleshoot
+# Extension
+
+Add pass (POSIX password-store) and tree and configure with ssh, ssl, gpg, tree.
+
+Add MSYS2 MinGW64 standard development toolchain (GNU autotool, glibc, gcc, etc).
+
 
 
 
 # Attribution
 
-Alex Sarmiento for GitPortable-Pacman and David Gleba for a later port
+
+Johannes Schindelin for Git-For-Windows and the git-sdk-64 (Herculean work!).
+
+[git for windows](https://gitforwindows.org/install-inside-msys2-proper.html)
+
+
+Alex Sarmiento for GitPortable-Pacman and David Gleba for a later port of it.
 
 [gitportable-pacman](https://github.com/dgleba/gitportable-pacman)
 
 
-Johannes Schindelin and GitForWindows
+# License
 
-[git for windows](https://gitforwindows.org/install-inside-msys2-proper.html)
+Creative-Commons,  Attribution, NonCommercial, ShareAlike 4.0
+
 
 
