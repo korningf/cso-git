@@ -7,11 +7,11 @@ Add unix password-store (pass command); configure with ssh, ssl, gpg, tree.
 Add MSYS2 MinGW64 standard development tools (GNU autotool, glibc, gcc, etc).
 
 
-# Configuration
+# Preparation
 
 To get pacman working we to add the gpg key for the git-sdk-64 distribution in the keyring.
 
-It turns out it has the same author and the same key as the git-for-windows distribution.
+It turns out it has the same author and the same key as the git-for-windows distribution!
 
 
 ```bash
@@ -36,9 +36,7 @@ This installs the binaries, and sets up a mirror of the MSYS2 git-sdk-64 repo.
 
   
 
-# Operation
-
-
+# Configuration
 
 Update the pacman distro
 
@@ -49,13 +47,19 @@ pacman -Syu --overwrite \*
 ```
 
 
-
 You can now run pacman normally.
 
 ```bash
-pacman -Syuq tree pass
-pacman -Syuq zip rsync
+pacman -Syu util-linux --overwrite \*
+pacman -Syuq tree pass  --overwrite \*
+pacman -Syuq zip rsync  --overwrite \*
 ```
+
+
+# Operation
+
+
+
 
 
 # Troubleshoot
