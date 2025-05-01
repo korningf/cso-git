@@ -41,13 +41,14 @@ This installs the binaries, and sets up a mirror of the MSYS2 git-sdk-64 repo.
 Update the pacman distro
 
 
+First we update the pacman distribution itself.
+
 ```bash
 pacman -Syy --overwrite \*
 pacman -Syu --overwrite \*
 ```
 
-
-You can now run pacman normally.
+Then we update util-linux and some core utils.
 
 ```bash
 pacman -Syu util-linux --overwrite \*
@@ -58,7 +59,7 @@ pacman -Syuq zip rsync  --overwrite \*
 
 # Operation
 
-
+We can now run pacman normally.
 
 
 
