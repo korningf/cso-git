@@ -33,8 +33,18 @@ curl -L \
 # Operation
 
 
-You can now run pacman normally.
 
+Update the pacman distro
+
+
+```bash
+pacman -Sy
+pacman -Syu --overwrite ‘*’
+```
+
+
+
+You can now run pacman normally.
 
 ```bash
 pacman -Syuq tree pass
@@ -42,6 +52,10 @@ pacman -Syuq zip rsync
 ```
 
 
+# Troubleshoot
+
+  https://bbs.archlinux.org/viewtopic.php?id=272350
+  https://ostechnix.com/how-to-solve-error-failed-to-commit-transaction-conflicting-files-in-arch-linux/
 
 # Attribution
 
