@@ -64,8 +64,7 @@ pacman -Syuq zip rsync  --overwrite \*
 
 # Troubleshoot
 
-  https://bbs.archlinux.org/viewtopic.php?id=272350
-  https://ostechnix.com/how-to-solve-error-failed-to-commit-transaction-conflicting-files-in-arch-linux/
+
 
 # Attribution
 
