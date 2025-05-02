@@ -84,17 +84,21 @@ Add MSYS2 MinGW64 standard development toolchain (GNU autotool, glibc, gcc, etc)
 # Attribution
 
 
-*Stephane Korning* (stefuss@yahoo.com) for the original idea and impetus. 
+*Stephane Korning* (stefuss@yahoo.com) for the idea adn impetus to port pacman to gitbash. 
 
 
-*Johannes Schindelin* for Git-For-Windows and the git-sdk-64 (Herculean work!).
+*Alex Sarmiento* and *David Gleba* for an actual implementation in their GitPortable-Pacman.
+
+[gitportable-pacman](https://github.com/dgleba/gitportable-pacman)
+
+
+*Johannes Schindelin* for Git-For-Windows and its underlying git-sdk-64 (Herculean work!).
 
 [git for windows](https://gitforwindows.org/install-inside-msys2-proper.html)
 
 
-*Alex Sarmiento* for GitPortable-Pacman and *David Gleba* for a latert port.
+The host of developers having made *Git*, *Msys*, *Cygwin*, *MinGW*, *GNU* and *POSIX* possible.
 
-[gitportable-pacman](https://github.com/dgleba/gitportable-pacman)
 
 
 # License
