@@ -129,6 +129,11 @@ Update the pacman distro
 First we update the pacman distribution itself.
 
 ```bash
+pacman -Syy pacman --overwrite \*
+pacman -Syu pacman --overwrite \*
+```
+
+```bash
 pacman -Syy --overwrite \*
 pacman -Syu --overwrite \*
 ```
