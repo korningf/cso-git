@@ -2,7 +2,7 @@
 
 ![gitbash-pacman](gitbash-pacman.png)
 
-Aegis-Git is a GitBash portable POSIX augmented with the MSYS2 pacman package manager.
+Aegis-Git is a GitBash portable POSIX augmented with the MSYS2 PacMan package manager.
 
 It is based on GitBash, based on MSysGit, based on Msys2, itself derived from Cygwin.
 
@@ -11,6 +11,17 @@ GitBash ports Git and core-utils on Windows, but it does not port other needed t
 Tools that are fundamental for build development, systems integration, and automation.
 
 In short, Aegis-Git empowers Cloud-Ops and Dev-Ops from a bare minima Windows desktop.
+
+
+# Solution
+
+The key to getting this to work is to realise that underneath GitBash is a minimal MSys.
+
+It is an MSys2 pared-down without a MinGW toolchain and without any package management.
+
+But GitBash itself is built on MSys2, specifically, inside SysGit / MSysGit, which does.
+
+We can clone its pacman package management configuration and repatriate it into gitbash.
 
 
 
@@ -24,7 +35,7 @@ These typically run as technical service accounts and should not live in a user 
 
 .
 
-For this reason, though we may havee a user-space install, we want it to live in `c:\git`.
+For this reason, though we may have user-space install, we still want it to live in `c:\git`.
 
 Depending on the institution or individual, we may have admin rights for the installation.
 
@@ -32,7 +43,7 @@ We recommend doing an initial gitbash install as Administrator along with the `s
 
 User-space installs will not be able to run the `sshd` OpenSSH server or any other daemon.
 
-Otherwise User-space installation works just fine - we still recommend it lives in `c:\git`. 
+Other than that, User-space install works just fine - we still recommend it lives in `c:\git`. 
 
 .
 
