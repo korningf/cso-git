@@ -10,14 +10,23 @@ GitBash ports Git and core-utils on Windows, but it does not port other needed t
 
 Tools that are fundamental for build development, systems integration, and automation.
 
-Aegis-Git empowers Cloud-Ops and Dev-Ops from a bare minimum Windows desktop.
+Aegis-Git empowers Cloud-Ops and Dev-Ops automation from a bare minimum Windows desktop.
 
 
-# Specification
+# Mission
 
-We want a minim windows desktop POSIX environment for automation and integration.
+Different institutions or individuals vary widely in their desktop security practices.
 
-This is to be an atomic, baremetal base box, a building block for all our systems.
+Some may allow a full Cygwin POSIX dstribution, others MSsys, yet others merely GitBash.
+
+We want a minimum POSIX environment for automation and integration on Windows Desktops.
+
+
+.
+
+For Automation we need to authenticate, pull code from a repo, and run secure commands.
+
+We start with GitBash as baremetal base box, an atomic building block for other systems.
 
 It should have, at minimum
 
@@ -30,6 +39,8 @@ It should have, at minimum
 
 
 # Solution
+
+GitBash covers almost everything we need. The only thing missing is a package manager.
 
 The key to getting this to work is to realise that underneath GitBash is a minimal MSys.
 
@@ -52,8 +63,6 @@ These typically run as technical service accounts and should not live in a user 
 .
 
 For this reason, though we may have user-space install, we still want it to live in `c:\git`.
-
-Depending on the institution or individual, we may have admin rights for the installation.
 
 We recommend doing an initial gitbash install as Administrator along with the `sshd` Daemon.
 
