@@ -154,7 +154,7 @@ Add MSYS2 MinGW64 standard development toolchain (GNU autotool, glibc, gcc, etc)
 # Attribution
 
 
-*Stephane Korning* (stefuss@yahoo.com) for the idea adn impetus to port pacman to gitbash. 
+*Stephane Korning* (stefuss@yahoo.com) for the idea and impetus to port pacman to gitbash. 
 
 
 *Alex Sarmiento* and *David Gleba* for an actual implementation in their GitPortable-Pacman.
