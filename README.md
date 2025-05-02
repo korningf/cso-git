@@ -54,7 +54,11 @@ We can clone its pacman package management configuration and repatriate it into 
 
 # Preparation
 
+*Depending on the institution or individual, this may or my not be an Administrator installation*.
+
 *You should uninstall any other competing variants of GitBash, MSysGit, or GitForWindows*.
+
+.
 
 We want Aegis-git to be multi-user and crucially be able to run system daemons and servers.
 
@@ -65,6 +69,8 @@ These typically run as technical service accounts and should not live in a user 
 For this reason, though we may have user-space install, we still want it to live in `c:\git`.
 
 We recommend doing an initial gitbash install as Administrator along with the `sshd` Daemon.
+
+.
 
 User-space installs will not be able to run the `sshd` OpenSSH server or any other daemon.
 
