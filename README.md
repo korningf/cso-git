@@ -10,7 +10,7 @@ GitBash ports Git and core-utils on Windows, but it does not port other needed t
 
 Tools that are fundamental for build development, systems integration, and automation.
 
-Aegis-Git empowers Cloud-Ops and Dev-Ops automation from a bare minimum Windows desktop.
+Aegis-Git provides a bare minimum environment to drive Cloud-Ops and Dev-Ops automation.
 
 
 # Mission
@@ -21,10 +21,9 @@ Some may allow a full Cygwin POSIX dstribution, others MSsys, yet others merely 
 
 We want a minimum POSIX environment for automation and integration on Windows Desktops.
 
-
 .
 
-For Automation we need to authenticate, pull code from a repo, and run secure commands.
+For Automation, we need to authenticate, pull code from a repo, and run secure commands.
 
 We start with GitBash as baremetal base box, an atomic building block for other systems.
 
@@ -35,6 +34,8 @@ It should have, at minimum
 - GNU core utils
 - package manager
 - Git SCM
+
+We will build up other systems on top of this.  Aegis-Git is the baremetal base box.
 
 
 
