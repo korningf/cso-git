@@ -6,7 +6,7 @@ Aegis-Git is a GitBash portable POSIX augmented with the MSYS2 PacMan package ma
 
 It is based on GitBash, based on MSysGit, based on Msys2, itself derived from Cygwin.
 
-GitBash ports Git and core-utils on Windows, but it does not port other needed tools.
+Now GitBash ports git and core-utils on Windows, but it is missing other needed tools.
 
 Tools that are fundamental for build development, systems integration, and automation.
 
@@ -17,7 +17,7 @@ Aegis-Git provides a bare minimum environment to drive Cloud-Ops and Dev-Ops aut
 
 Different institutions or individuals vary widely in their desktop security practices.
 
-Some may allow a full Cygwin POSIX dstribution, others MSsys, yet others merely GitBash.
+Some may allow a full Cygwin POSIX distribution, others MSsys, yet others merely GitBash.
 
 We want a minimum POSIX environment for automation and integration on Windows Desktops.
 
@@ -61,7 +61,7 @@ We can clone its `pacman` package management facility and reintegrate it into gi
 
 *Depending on the institution or individual, this may or my not be an Administrator installation*.
 
-*You should uninstall any other competing variants of GitBash, MSysGit, or GitForWindows*.
+*IMPORTANT You should uninstall any other competing variants of GitBash, MSysGit, or GitForWindows*.
 
 .
 
