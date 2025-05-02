@@ -25,8 +25,6 @@ We want a minimum POSIX environment for automation and integration on Windows De
 
 For Automation, we need to authenticate, pull code from a repo, and run secure commands.
 
-We start with GitBash as baremetal base box, an atomic building block for other systems.
-
 It should have, at minimum
 
 - POSIX bash shell
@@ -41,15 +39,21 @@ We will build up other systems on top of this.  Aegis-Git is the baremetal base 
 
 # Solution
 
+We start with GitBash as baremetal base box, an atomic building block for other systems.
+
 GitBash covers almost everything we need. The only thing missing is a package manager.
+
+.
 
 The key to getting this to work is to realise that underneath GitBash is a minimal MSys.
 
 It is an MSys2 pared-down without a MinGW toolchain and without any package management.
 
-But GitBash itself is built on MSys2, specifically, inside SysGit / MSysGit, which does.
+.
 
-We can clone its pacman package management configuration and repatriate it into gitbash.
+Now GitBash itself is built on MSys2, specifically, inside SysGit / MSysGit, which does.
+
+We can clone its `pacman` package management facility and reintegrate it into gitbash.
 
 
 
