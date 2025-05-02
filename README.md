@@ -10,7 +10,23 @@ GitBash ports Git and core-utils on Windows, but it does not port other needed t
 
 Tools that are fundamental for build development, systems integration, and automation.
 
-In short, Aegis-Git empowers Cloud-Ops and Dev-Ops from a bare minima Windows desktop.
+Aegis-Git empowers Cloud-Ops and Dev-Ops from a bare minimum Windows desktop.
+
+
+# Specification
+
+We want a minim windows desktop POSIX environment for automation and integration.
+
+This is to be an atomic, baremetal base box, a building block for all our systems.
+
+It should have, at minimum
+
+- POSIX bash shell
+- SSH Secure Shell
+- GNU core utils
+- package manager
+- Git SCM
+
 
 
 # Solution
