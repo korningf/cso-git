@@ -14,15 +14,43 @@ In short, Aegis-Git empowers Cloud-Ops and Dev-Ops from a bare minima Windows de
 
 
 
-
-
-
 # Preparation
+
+*You should uninstall any other competing variants of GitBash, MSysGit, or GitForWindows*.
+
+We want Aegis-git to be multi-user and crucially be able to run system daemons and servers.
+
+These typically run as technical service accounts and should not live in a user `%AppData%`. 
+
+.
+
+For this reason, though we may havee a user-space install, we want it to live in `c:\git`.
+
+Depending on the institution or individual, we may have admin rights for the installation.
+
+We recommend doing an initial gitbash install as Administrator along with the `sshd` Daemon.
+
+User-space installs will not be able to run the `sshd` OpenSSH server or any other daemon.
+
+Otherwise User-space installation works just fine - we still recommend it lives in `c:\git`. 
+
+.
+
+install gitbash:
+
+    winget install --id Git.Git -e --source winget --location "c:\git"
+
+
+
+# Installation
+
 
 To get pacman working we to add the gpg key for the git-sdk-64 distribution in the keyring.
 
 It turns out it has the same author and the same key as the git-for-windows distribution!
 
+
+install keyring:
 
 ```bash
 curl -L \
@@ -33,9 +61,9 @@ curl -L \
 ```
 
 
-# Installation
+install pacman:
 
-From a gitbash shell run `install-pacman-git-bash.sh` for the initial setup.
+From the gitbash shell run `install-pacman-git-bash.sh` for the initial setup.
 
 This installs the binaries, and sets up a mirror of the MSYS2 git-sdk-64 repo.
 
