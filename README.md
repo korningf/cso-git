@@ -1,8 +1,10 @@
 # Aegis-git
 
+Aegis-Git is a GitBash portable POSIX augmented with the MSYS2 PacMan package manager.
+
 ![gitbash-pacman](gitbash-pacman.png)
 
-Aegis-Git is a GitBash portable POSIX augmented with the MSYS2 PacMan package manager.
+
 
 It is based on GitBash, based on MSysGit, based on Msys2, itself derived from Cygwin.
 
