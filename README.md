@@ -117,15 +117,14 @@ install python:
 
 
 
-# Installation
+# Pacman
 
+## Preparation
 
 To get pacman working we to add the gpg key for the git-sdk-64 distribution in the keyring.
 
 It turns out it has the same author and the same key as the git-for-windows distribution!
 
-
-install keyring:
 
 ```bash
 curl -L \
@@ -136,9 +135,10 @@ curl -L \
 ```
 
 
-install pacman:
 
-From the gitbash shell run `install-pacman-git-bash.sh` for the initial setup.
+## Installation
+
+From a gitbash shell run `install-pacman-git-bash.sh` for the initial setup.
 
 This installs the binaries, and sets up a mirror of the MSYS2 git-sdk-64 repo.
 
@@ -149,10 +149,7 @@ This installs the binaries, and sets up a mirror of the MSYS2 git-sdk-64 repo.
 
   
 
-# Configuration
-
-Update the pacman distro
-
+## Configuration
 
 First we update the pacman distribution itself.
 
@@ -169,19 +166,21 @@ pacman -Syu --overwrite \*
 Then we update util-linux and some core utils.
 
 ```bash
-pacman -Syu util-linux --overwrite \*
+pacman -Syu coreutils util-linux --overwrite \*
 pacman -Syuq tree pass  --overwrite \*
 pacman -Syuq zip rsync  --overwrite \*
 ```
 
 
-# Operation
+## Operation
 
 We can now run pacman normally.
 
 
 
-# Extension
+# Pass
+
+# Extensions
 
 Add pass (POSIX password-store) and tree and configure with ssh, ssl, gpg, tree.
 
