@@ -61,13 +61,17 @@ We can clone its `pacman` package management facility and reintegrate it into gi
 
 *Depending on the institution or individual, this may or my not be an Administrator installation*.
 
-Our objective is to get a working `pacman` packaage manager and interpreted and compiled languages.
-
-The Msys OpenSSL libraries must be able to talk to Windows Credential manager and pull certificates.
-
 *IMPORTANT You should uninstall any other competing variants of GitBash, MSysGit, or GitForWindows*.
 
-Clear old repos and cache:
+Our objective is to get a working `pacman` packaage manager and interpreted and compiled languages.
+
+Modern package managers use SSL/TLS and GPG keyrings to securely pull packages from distributions.
+
+.
+
+Uninstall  Git, Msys, Rtools.
+        
+Clear old git and cache:
 
 ```text
     %PROGRAMFILES%\Git
@@ -80,27 +84,36 @@ Clear old repos and cache:
 ```
 
 
-We want Aegis-git to be multi-user and crucially be able to run system daemons and servers.
+# GitBash
 
-These typically run as technical service accounts and should not live in a user `%AppData%`. 
+The Git OpenSSL libraries must be able to talk to Windows Credential manager and pull certificates.
 
-.
-
-For this reason, though we may have user-space install, we still want it to live in `c:\git`.
-
-We recommend doing an initial gitbash install as Administrator along with the `sshd` Daemon.
-
-.
-
-User-space installs will not be able to run the `sshd` OpenSSH server or any other daemon.
-
-Other than that, User-space install works just fine - we still recommend it lives in `c:\git`. 
+For this reason, on a managed desktop machine it is best to install Git with the default settings.
 
 .
 
 install gitbash:
 
-    winget install --id Git.Git -e --source winget --location "c:\git"
+    winget install -e --id Git.Git -source winget
+
+
+
+# Python
+
+Mixed Python / Pip environments on Windows can be quite problematic with SSL/TLS and `Pyenv` `pipenv`.
+
+The Python pip package manager must be able to talk to Windows Credential manager and pull certificates.
+
+Python and pip in particular are very temperamental with mixed environments and mixed SSL/TLS bindings.
+
+For this reason, on a managed desktop, it is best to install a managed machine-scoped Python for Windows. 
+
+.
+
+install python:
+
+    winget install -e --id Python.Python.3.12 --scope machine
+    
 
 
 
