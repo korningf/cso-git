@@ -63,9 +63,9 @@ We can clone its `pacman` package management facility and reintegrate it into gi
 
 *Depending on the institution or individual, this may or my not be an Administrator installation*.
 
-*IMPORTANT You should uninstall any other competing variants of GitBash, MSysGit, or GitForWindows*.
+*IMPORTANT Uninstall any other competing variants of GitBash, MSys, SysGit, or any GitForWindows*.
 
-Our objective is to get a working `pacman` packaage manager and interpreted and compiled languages.
+Our objective is to get a working `pacman` package manager and interpreted and compiled languages.
 
 Modern package managers use SSL/TLS and GPG keyrings to securely pull packages from distributions.
 
