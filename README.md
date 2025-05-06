@@ -15,7 +15,7 @@ Tools that are fundamental for build development, systems integration, and autom
 Aegis-Git provides a bare minimum environment to drive Cloud-Ops and Dev-Ops automation.
 
 
-# Mission
+# Abstract
 
 Different institutions or individuals vary widely in their desktop security practices.
 
