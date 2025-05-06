@@ -61,9 +61,24 @@ We can clone its `pacman` package management facility and reintegrate it into gi
 
 *Depending on the institution or individual, this may or my not be an Administrator installation*.
 
+Our objective is to get a working `pacman` packaage manager and interpreted and compiled languages.
+
+The Msys OpenSSL libraries must be able to talk to Windows Credential manager and pull certificates.
+
 *IMPORTANT You should uninstall any other competing variants of GitBash, MSysGit, or GitForWindows*.
 
-.
+Clear old repos and cache:
+
+```text
+    %PROGRAMFILES%\Git
+    %PROGRAMFILES%\Msys
+    %PROGRAMFILES%\RTools
+    %USERPROFILE%\AppData\Local\Git
+    %USERPROFILE%\AppData\Local\pip
+    %USERPROFILE%\AppData\Local\Programs\Git
+    %USERPROFILE%\AppData\Local\Programs\pip
+```
+
 
 We want Aegis-git to be multi-user and crucially be able to run system daemons and servers.
 
