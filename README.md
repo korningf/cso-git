@@ -180,14 +180,6 @@ We can now run pacman normally.
 
 
 
-# Pass
-
-# Extensions
-
-Add pass (POSIX password-store) and tree and configure with ssh, ssl, gpg, tree.
-
-Add MSYS2 MinGW64 standard development toolchain (GNU autotool, glibc, gcc, etc).
-
 
 
 # Attribution
