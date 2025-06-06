@@ -49,11 +49,11 @@ GitBash covers almost everything we need. The only thing missing is a package ma
 
 The key to getting this to work is to realise that underneath GitBash is a minimal MSys.
 
-It is an MSys2 pared-down without a MinGW toolchain and without any package management.
+It is a pared-down MSys2 without a MinGW toolchain and without any package management.
 
 .
 
-Now GitBash itself is built on MSys2, specifically, inside SysGit / MSysGit, which does.
+Now MSys2 itself is built within SysGit / MSysGit, which has a full working environment.
 
 We can clone its `pacman` package management facility and reintegrate it into gitbash.
 
