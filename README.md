@@ -12,7 +12,7 @@ Now GitBash ports git and core-utils on Windows, but it is missing other needed 
 
 Tools that are fundamental for build development, systems integration, and automation.
 
-Aegis-Git provides a bare minimum environment to drive Cloud-Ops and Dev-Ops automation.
+CSO-Git provides a bare minimum environment to drive Cloud-Ops and Dev-Ops automation.
 
 
 # Abstract
@@ -35,7 +35,7 @@ It should have, at minimum
 - package manager
 - Git SCM
 
-We will build up other systems on top of this.  Aegis-Git is the baremetal base box.
+We will build up other systems on top of this.  CSO-Git is the baremetal base box.
 
 
 
@@ -183,7 +183,7 @@ We can now run pacman normally.
 # Attribution
 
 
-This project is a fork of [Aegis-Git](https://github.com/korningf/aegis-git).
+This project is a fork of [CSO-Git](https://github.com/korningf/CSO-git).
 
 
 
