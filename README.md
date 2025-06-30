@@ -2,7 +2,7 @@
 
 CSO-Git is a GitBash portable POSIX augmented with the MSYS2 PacMan package manager.
 
-![gitbash-pacman](gitbash-pacman.png)
+![gitbash-pacman](gitbash-pacman.jpg)
 
 
 
