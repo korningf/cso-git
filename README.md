@@ -112,8 +112,16 @@ For this reason, on a managed desktop, it is best to install a managed machine-s
 
 install python:
 
-    winget install -e --id Python.Python.3.12 --scope machine
+    winget install -e --id Python.Python.3.10 --scope machine
     
+
+
+add local pip scripts and site-packages to your %PATH% :
+
+```text
+    %USERPROFILE%\AppData\Roaming\Python\Python310\Scripts
+    %USERPROFILE%\AppData\Roaming\Python\Python310\Site-packages    
+```
 
 
 
