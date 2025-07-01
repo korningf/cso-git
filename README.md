@@ -19,7 +19,7 @@ CSO-Git provides a bare minimum environment to drive Cloud-Ops and Dev-Ops autom
 
 Different institutions or individuals vary widely in their desktop security practices.
 
-Some may allow a full Cygwin POSIX distribution, others MSsys, yet others merely GitBash.
+Some may allow a full Cygwin POSIX distribution, others MSys, yet others merely GitBash.
 
 We want a minimum POSIX environment for automation and integration on Windows Desktops.
 
@@ -100,29 +100,6 @@ install gitbash:
 
 
 
-# Python
-
-Python and pip in particular are very temperamental with mixed environments and mixed SSL/TLS bindings.
-
-The Python pip package manager must be able to talk to Windows Credential manager and pull certificates.
-
-For this reason, on a managed desktop, it is best to install a managed machine-scoped Python for Windows. 
-
-.
-
-install python:
-
-    winget install -e --id Python.Python.3.10 --scope machine
-    
-
-
-add local pip scripts and site-packages to your %PATH% :
-
-```text
-    %USERPROFILE%\AppData\Roaming\Python\Python310\Scripts
-    %USERPROFILE%\AppData\Roaming\Python\Python310\Site-packages    
-```
-
 
 
 # Pacman
@@ -183,6 +160,72 @@ pacman -Syuq zip rsync  --overwrite \*
 ## Operation
 
 We can now run pacman normally.
+
+
+
+# Interpreters
+
+Automation will no doubt require a number of interpreted languages in addition to Bash Shell scripting.
+
+Of particular interest are Perl, Ruby, Python, and Go, all of which are used in the common DevOps tools.
+
+Gnu Core-utils ships with bash and perl; Pacman can be used to install the others, but python is tricky.
+
+
+
+# Python
+
+Python and pip in particular are very temperamental with mixed environments and mixed SSL/TLS bindings.
+
+The Python pip package manager must be able to talk to Windows Credential manager to pull certificates.
+
+For this reason, on a managed desktop, it is best to install a managed machine-scoped Python for Windows. 
+
+.
+
+install python:
+
+    winget install -e --id Python.Python.3.10 --scope machine
+    
+
+
+add local pip scripts and site-packages to your %PATH% :
+
+```text
+    %USERPROFILE%\AppData\Roaming\Python\Python310\Scripts
+    %USERPROFILE%\AppData\Roaming\Python\Python310\Site-packages    
+```
+
+
+
+## stream processors
+
+
+We will want some common file or stream processors: JQ (json), YQ (yaml), XQ (xml/xhtml/sgml/html).
+
+JQ is a compiled Ansi-C binary and needs to be installed separately (currently blocked by scanner).
+
+_TODO_ ask to unblock JQ.
+
+
+
+install JQ by copying the binary:
+
+```text
+   curl -o jq.exe https://github.com/jqlang/jq/releases/download/jq-1.8.0/jq-windows-amd64.exe
+   chmod a+x jq.exe
+   mv jq.exe /bin/
+```
+
+
+install the pip wrapper for JQ.  Also install XQ and YQ which are both native Python pip packages.
+
+
+install JQ, XQ, and YQ pip packages:
+
+```text
+   pip install jq xq yq
+```
 
 
 
