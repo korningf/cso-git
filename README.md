@@ -205,16 +205,19 @@ We will want some common file or stream processors: JQ (json), YQ (yaml), XQ (xm
 
 JQ is a compiled Ansi-C binary and needs to be installed separately (currently blocked by scanner).
 
-_TODO_ ask to unblock JQ.
+_TODO ask to unblock JQ._
 
 
 
 install JQ by copying the binary:
 
+_TODO Msys does not use /usr/local/bin - put it in /usr/bin for now_
+
+
 ```text
    curl -o jq.exe https://github.com/jqlang/jq/releases/download/jq-1.8.0/jq-windows-amd64.exe
    chmod a+x jq.exe
-   mv jq.exe /bin/
+   mv jq.exe /usr/bin/
 ```
 
 
